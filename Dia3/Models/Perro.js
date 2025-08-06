@@ -1,6 +1,12 @@
 const Animal = require ("./Animal")
 
 class Perro extends Animal{
+    // Soobreescritura de método
+
+    hablar(){
+        console.log (` ${this.nombre} está ladrando `)
+    }
+
 
 }
 

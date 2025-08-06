@@ -21,7 +21,7 @@ Abstraccion: Representar entidades del mundo real comn sus caracteristicas esenc
 const Persona = require('./Models/Persona');
 const CuentaBancaria = require ('./Models/CuentaBancaria')
 const Perro = require ('./Models/Perro')
-
+const Gato = require ('./Models/Gato')
 
 
 const pedro = new Persona ('Pedro', 25);
@@ -34,3 +34,6 @@ console.log(cuenta.verSaldo())
 
 const animal1 = new Perro("Paco");
 animal1.hablar();
+
+const animal2 = new Gato("Mechas");
+animal2.hablar();
