@@ -68,5 +68,8 @@ const libro2 = new Libro( '978-2','Cien años de soledad');
 
 console.log(libro1);
 aurtor1.agregarLibro(libro1);
+aurtor1.agregarLibro(libro2)
 console.log(aurtor1);
 console.log(aurtor1);
+
+aurtor1.eliminarLibro(libro2)
