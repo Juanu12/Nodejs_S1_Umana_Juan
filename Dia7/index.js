@@ -100,7 +100,7 @@ if (!fs.existsSync(path)) {
 }
 
 const data = loadData(); 
-console.log("Elemntos cargados con Éxito: ");
+console.log("Elementos cargados con Éxito: ");
 
 console.table(data)
 
@@ -119,6 +119,8 @@ function updateItem(){
     }
     const nombreNuevo = prompt("Ingresa el nuevo nombre: ");
     item.nombre = nombreNuevo; 
+    saveData(data);
+
     console.log("Elemento actualizado con exito");
 
 }
