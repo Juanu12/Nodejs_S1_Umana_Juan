@@ -1,4 +1,4 @@
-const { loadData, saveData } = require("../Db/Db"); // Importamos las funciones que tiene que ver con el json
+const { loadData, saveData } = require("../Models/Db"); // Importamos las funciones que tiene que ver con el json
 
 const prompt = require('prompt-sync')(); // Importamos el prompt-sync para poder preguntar al usuario
 
