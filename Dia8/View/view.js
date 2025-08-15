@@ -11,4 +11,7 @@ function showMenu() {
     return prompt("Selecciona una opción: ");
 }
 
-module.exports = { showMenu, prompt };
+// Creamos la funcion del menu y ponemos las opciones
+
+module.exports = { showMenu, prompt }; // Exportamos el menu y la opcion de poner los datos 
+
