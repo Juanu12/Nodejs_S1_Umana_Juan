@@ -31,8 +31,8 @@ class ItemModel {
     const nuevo = new Item ({
 
         id: this._seq++,
-        nombre : (nombre || '').trim(),
-        descripcion : ( descripcion || '').trim()
+        nombre : (nombre || '').toString().trim(),
+        descripcion : ( descripcion || '').toString().trim()
 
 
 

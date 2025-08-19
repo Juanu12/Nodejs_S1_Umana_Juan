@@ -31,10 +31,36 @@ const Itemview = {
 
     mostratMensaje(msg){
         console.log(`\n ${msg}`);
+    }, 
+
+    listar (items) {
+        if (items.length === 0) {
+            console.log("\n No hay items para mostrar");
+            return;
+        }
+        console.table(items);
+    },
+
+    actualizar (id, prompt) {
+        id = prompt("Id para actualizar: ").trim();
+        const nombre = prompt("Nuevo nombre: ").trim();
+        const descripcion = prompt("Nueva descripción: ").trim();
+        const datos = { nombre, descripcion };
+        return { id, datos };
+     
+
+    },
+
+    eliminar(prompt) {
+        const id = prompt("Id para eliminar: ").trim();
+        return id;
+    },
+
+    buscarPorId (id, prompt) {
+        id = prompt("Id a buscar: ").trim();
+        return id;
+
     }
-
-
-
 };
 
 
