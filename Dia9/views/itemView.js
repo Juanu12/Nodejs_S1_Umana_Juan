@@ -29,7 +29,7 @@ const Itemview = {
 
     },
 
-    mostratMensaje(msg){
+    mostrarMensaje(msg){
         console.log(`\n ${msg}`);
     }, 
 
@@ -53,12 +53,12 @@ const Itemview = {
 
     eliminar(prompt) {
         const id = prompt("Id para eliminar: ").trim();
-        return id;
+        return {id};
     },
 
-    buscarPorId (id, prompt) {
+    buscarPorId (  prompt) {
         id = prompt("Id a buscar: ").trim();
-        return id;
+        return {id};
 
     }
 };

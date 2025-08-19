@@ -15,11 +15,12 @@ class ItemController{
 
 
     }
-
     crear() {
         const { nombre, descripcion } = this.view.pedirDatosCreacion(this.prompt);
-        this.model.crear({ nombre, descripcion });
+        this.model.crear(nombre, descripcion);  
+        this.view.mostrarMensaje("Item creado con éxito");
     }
+    
     
   
 listar () {
@@ -56,11 +57,13 @@ eliminar ( ) {
 
  const data = this.view.eliminar(this.prompt)
  if (!data.id) {
-    this.view.mostrarmensaje ("El id es obligatorio");
+    this.view.mostrarMensaje ("El id es obligatorio");
     return;
  }
 
- const eliminado = this.model.eliiminar(eliminar.id)
+ const eliminado = this.model.eliminar(eliminar.id)
+ this.view.mostrarMensaje("Item eliminado con éxito");
+
 
 }
 
@@ -74,7 +77,11 @@ buscarPorId (){
     }
 
  const buscar = this.model.buscarPorId(data.id)
-
+    if (!buscar) {
+        this.view.mostrarMensaje("Item no encontrado");
+        return;
+    }
+    this.view.listar([buscar]);
 }
 
 }

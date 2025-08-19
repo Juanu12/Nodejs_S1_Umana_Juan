@@ -19,20 +19,25 @@ function main(){
         switch (op){
             case "1":
                 controller.crear();
+                break;
             
 
             case "2":
                 controller.listar()
+                break;
 
 
             case "3":  
                 controller .buscarPorId();
+                break;
 
             case "4":
                 controller.actualizar();
+                break;
             
             case "5":
                 controller.eliminar();
+                break;
 
             case "0":
             salir = true;;
