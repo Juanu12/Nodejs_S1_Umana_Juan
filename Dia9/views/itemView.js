@@ -1,6 +1,6 @@
 // La vista busca centraliozar toda la interacción por consola qure incvluye menu, prompts y formato de salida
 
-const Itemview = {
+const ItemView = {
 
     mostrarMenu() {
 
